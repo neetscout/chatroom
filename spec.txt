@@ -1,0 +1,46 @@
+Chat room demo:
+
+-node based server (express)
+-jquery
+-maybe angular4
+-simple CSS
+-controls:
+  message input
+  send input
+  messages history container
+    timestamp label
+    message label
+    ip label
+
+  -admin page:
+    clear all btn
+    delete msg btn
+
+
+on document load:
+  loadMessages
+
+
+on send Click :
+  loadMessages
+  sendMessage
+  emptyfield
+  ID
+
+every interval:
+  check for new messages
+
+load messages:
+  request json with messages
+  calculate truncated messaged -> truncate
+  calculate new messages -> remove html -> display
+
+
+messages json:
+  senderIp - string
+  date time - string
+  ID - number
+  message body - message body
+
+
+GIt - push this into a git repo
